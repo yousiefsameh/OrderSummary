@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    width: 450px;
+    margin: 20px auto;
+}
+
+.background-card {
+    width: 450px;
+    top: 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    margin-top: -10px;
+    background-color: white;
+}
+
+.text h1 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: hsl(223, 47%, 23%);
+}
+
+.text p {
+    color: gray;
+    text-align: center;
+}
+
+.price {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--pale-blue);
+}
+
+.price .left {
+    display: flex;
+    align-items: center;
+}
+
+.price .left .list {
+    padding-left: 20px;
+}
+
+.price .left .list span {
+    color: gray;
+}
+
+.card .text .buttons {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.card .text .buttons .blue-button {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    background-color: var(--Bright-blue);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 10px 10px 5px var(--pale-blue) , 10px 10px 5px var(--pale-blue);
+}
+
+.card .text .buttons .cancle-order {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: none;
+    border: none;
+    color: rgb(139, 139, 139);
+    font-weight: bold;
+}
